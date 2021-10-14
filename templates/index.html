@@ -1,1 +1,87 @@
+<!DOCTYPE html>
 
+<head>
+<style>
+h1 {text-align: center;}
+</style>
+</head>
+
+<body>
+
+<h1> Stroke Prediction </h>
+<p> Please enter the following details. </p>
+<form action="{{ url_for("preprocess")}}" method="post">
+
+<label>bmi</label>
+<input type="text" name="bmi">  
+<br> 
+
+<label>Age</label>
+<input type="text" name="age">  
+<br> 
+
+<label>Avg. glucose level</label>
+<input type="text" name="glucose">  
+<br>  
+
+<label>Gender</label>
+<select id="Gender" name="gender">
+<option value= "Male">Male</option>
+<option value ="Female">Female</option>
+</select>
+<br>
+
+<label>Hypertension</label>
+<select id="Hypertension" name="hypertension">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<br>
+
+<label>Heart disease</label>
+<select id="Heart disease" name="heart_disease">
+<option value= "Yes">Yes</option>
+<option value ="No">No</option>
+</select>
+<br>
+
+<label>Ever married</label>
+<select id="Ever married" name="ever_married">
+<option value= "Yes">Yes</option>
+<option value ="No">No</option>
+</select>
+<br>
+
+<label>Residence</label>
+<select id="residential_status" name="residential_status">
+<option value= "Rural">Rural</option>
+<option value ="Urban">Urban</option>
+</select>
+<br>
+
+<label>Type of Work</label>
+<select id="Type of Work" name="work_type">
+<option value= "Govt. job">Govt. job</option>
+<option value ="Private">Private</option>
+<option value = "Self-employed">Self-employed</option>
+<option value = "Never worked">Never worked</option>
+<option value = "Children">Children</option>
+</select>
+<br>
+
+<label>Smoking Status</label>
+<select id="Smoking Status" name="smoking_status">
+<option value= "Unknown">Unknown</option>
+<option value ="Formerly smoked">Formerly smoked</option>
+<option value = "Never smoked">Never smoked</option>
+<option value = "Smokes">Smokes</option>
+</select>
+<br>
+
+<button name="button" type="submit">Submit</button>  
+<br>
+
+
+</form>
+</body>
+</html>
